@@ -1,0 +1,34 @@
+{
+  "name": "SimplyPapers",
+  "description": "Access scientific papers via your institution account on any site with a single click.",
+  "version": "1.0",
+  "icons": {
+    "48": "images/logo_48.png",
+    "256": "images/logo_256.png",
+    "512": "images/logo_512.png",
+    "1024": "images/logo_1024.png"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "css": [],
+      "js": [
+        "scripts/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/logo_48.png"
+    },
+    "default_title": "SimplyPapers",
+    "default_popup": "popup.html"
+  }
+}

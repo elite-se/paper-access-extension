@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .institutions {
+        min-width: 160px;
+        padding: 12px;
+        background: #25272b;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid white;
+        color: white;
+        padding: 12px;
+    }
+
+    #lmu {
+        background-color: #00ac25;
+    }
+
+    #tum {
+        background-color: #3437f0;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .spacer {
+        height: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="institutions">
+        <button id="lmu">Access via LMU</button>
+        <div class="spacer"></div>
+        <button id="tum">Access via TUM</button>
+  </div>
+
+  <script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
